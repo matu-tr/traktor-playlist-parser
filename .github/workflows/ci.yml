@@ -53,10 +53,10 @@ jobs:
           app = QApplication(sys.argv)
           window = MainWindow()
 
-          html_result = parse_html_playlist('wats04.html')
+          html_result = parse_html_playlist('tests/fixtures/wats04.html')
           FieldFormatDialog(html_result, window)
 
-          nml_result = parse_nml_playlist('wats04.nml')
+          nml_result = parse_nml_playlist('tests/fixtures/wats04.nml')
           FieldFormatDialog(nml_result, window)
 
           print('GUI smoke test OK')
